@@ -5591,7 +5591,7 @@ gatsby-source-filesystem@^3.4.0:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-source-sanity@^7.2.0:
+gatsby-source-sanity@^7.3.2:
   version "7.3.2"
   resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-7.3.2.tgz#785f9d12c26b2c991210b84e3eacd480784f0ee0"
   integrity sha512-378i0rk0ESiUvRZiYnQRqpRTY36irq4+VZZ3s/j/zwlBXkK4BXkyZkl+ELtOksSWKSL61LWhxAWzKtLuGAOxpw==
