@@ -2,6 +2,9 @@ const dotenv = require("dotenv")
 
 dotenv.config()
 
+const token = process.env.SANITY_TOKEN || ''
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -16,11 +19,13 @@ module.exports = {
         dataset: process.env.SANITY_DATASET,
         // a token with read permissions is required
         // if you have a private dataset
-        token: process.env.SANITY_TOKEN,
 
         // If the Sanity GraphQL API was deployed using `--tag <name>`,
         // use `graphqlTag` to specify the tag name. Defaults to `default`.
         graphqlTag: process.env.SANITY_GRAPHQL_TAG || 'default',
+        token: process.env.SANITY_TOKEN,
+        watchMode: process.env.SANITY_ENABLE_WATCH_MODE === 'true',
+        overlayDrafts: process.env.SANITY_ENABLE_OVERLAY_DRAFTS === 'true',
       },
     },
     `gatsby-plugin-react-helmet`,
