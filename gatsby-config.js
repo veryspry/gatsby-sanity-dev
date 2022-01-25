@@ -1,5 +1,7 @@
-console.log('=============================')
-console.log(process.env.SANITY_PROJECT_ID)
+const dotenv = require("dotenv")
+
+dotenv.config()
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
